@@ -3,18 +3,24 @@ import java.util.Scanner;
 public class HW {
 
 	public static void main(String[] args) {
-		int x,y;
-		double pow;
+		int in;
+		double rem;
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Enter the two values: ");
-		x = input.nextInt();
-		y = input.nextInt();	
+		System.out.print("Enter the value to check: ");
+		in = input.nextInt();	
 
-		pow = Math.pow(x, y);
-
-		System.out.printf("The result is %.3f.%n", pow);
+		rem = in % 2;
+		
+		if (rem == 0) {
+			System.out.printf("The value is even.");
+		}
+		
+		else {
+			System.out.printf("The value is odd.");
+		}
+		
 
 	}
 
