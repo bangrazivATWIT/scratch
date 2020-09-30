@@ -20,7 +20,7 @@ public class HW {
 		else {
 			System.out.printf("The value is odd.");
 		}
-		//1
+		//passed
 
 	}
 
