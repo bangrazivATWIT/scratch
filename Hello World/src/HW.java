@@ -19,7 +19,6 @@ public class HW {
 		
 		else {
 			System.out.printf("The value is odd.");
-			//test
 		}
 		
 
