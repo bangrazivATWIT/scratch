@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class HW {
 
 	public static void main(String[] args) {
-		double grade1, grade2;
+		int grade1, grade2;
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -13,7 +13,12 @@ public class HW {
 		System.out.print("Enter the student's second grade: ");
 		grade2 = input.nextInt();
 		
-		if (grade1 >= 90 && grade2 >= 90) {
+		if (grade1 < 0 || grade2 < 0) {
+			System.out.printf("Please enter positive numbers");
+			System.exit(0);
+		}
+		
+		else if (grade1 >= 90 && grade2 >= 90) {
 			System.out.printf("Way to go!");
 		}
 		
