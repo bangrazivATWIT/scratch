@@ -4,7 +4,7 @@ public class HW {
 
 	public static void main(String[] args) {
 		int in;
-		double rem;
+		int rem;
 		
 		Scanner input = new Scanner(System.in);
 		
