@@ -1,10 +1,5 @@
 import java.util.Scanner;
 
-/**
- * 
- * @author Vincent
- *
- */
 public class HW {
 
 	public static void main(String[] args) {
@@ -20,19 +15,19 @@ public class HW {
 			System.out.printf("A");
 		}
 		
-		else if (grade >= 80 && grade <90) {
+		else if (grade >= 80) {
 			System.out.printf("B");
 		}
 		
-		else if (grade >= 70 && grade <80) {
+		else if (grade >= 70) {
 			System.out.printf("C");
 		}	
 		
-		else if (grade >= 60 && grade <70) {
+		else if (grade >= 60) {
 			System.out.printf("D");
 		}
 		
-		else if (grade <60) {
+		else {
 			System.out.printf("F");
 		}
 		
