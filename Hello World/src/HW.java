@@ -3,32 +3,26 @@ import java.util.Scanner;
 public class HW {
 
 	public static void main(String[] args) {
-		double grade;
+		double grade1, grade2;
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Enter the student's grade: ");
-		grade = input.nextInt();	
-
+		System.out.print("Enter the student's first grade: ");
+		grade1 = input.nextInt();
 		
-		if (grade >= 90) {
-			System.out.printf("A");
+		System.out.print("Enter the student's second grade: ");
+		grade2 = input.nextInt();
+		
+		if (grade1 >= 90 && grade2 >= 90) {
+			System.out.printf("Way to go!");
 		}
 		
-		else if (grade >= 80) {
-			System.out.printf("B");
-		}
-		
-		else if (grade >= 70) {
-			System.out.printf("C");
-		}	
-		
-		else if (grade >= 60) {
-			System.out.printf("D");
+		else if (grade1 < 70 || grade2 < 70) {
+			System.out.printf("Study more!");
 		}
 		
 		else {
-			System.out.printf("F");
+			System.out.printf("Keep it up!");
 		}
 		
 	}
