@@ -3,33 +3,21 @@ import java.util.Scanner;
 public class HW {
 
 	public static void main(String[] args) {
-		int grade1, grade2;
-		
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Enter the student's first grade: ");
-		grade1 = input.nextInt();
+		double length, width, area;
+		System.out.print("Enter positive rectangle length:");
+		length = input.nextDouble();
+		System.out.print("Enter positive rectangle width:");
+		width = input.nextDouble();
 		
-		System.out.print("Enter the student's second grade: ");
-		grade2 = input.nextInt();
-		
-		if ((grade1 < 0) || (grade2 < 0)) {
-			System.out.printf("Please enter positive numbers");
+		if((length<=0)||(width<=0)) {
+			System.out.println("Invalid measurements!");
 			System.exit(0);
 		}
-		
-		else if ((grade1 >= 90) && (grade2 >= 90)) {
-			System.out.printf("Way to go!");
-		}
-		
-		else if ((grade1 < 70) || (grade2 < 70)) {
-			System.out.printf("Study more!");
-		}
-		
-		else {
-			System.out.printf("Keep it up!");
-		}
-		
-	}
+		area = length*width;
+		System.out.println("The area is:"+area);
 
+	}
 }
