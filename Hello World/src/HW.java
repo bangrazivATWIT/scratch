@@ -6,18 +6,15 @@ public class HW {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		double length, width, area;
-		System.out.print("Enter positive rectangle length:");
-		length = input.nextDouble();
-		System.out.print("Enter positive rectangle width:");
-		width = input.nextDouble();
+		int n, i;
+		i = 0;
+		System.out.print("Enter the maximum value:");
+		n = input.nextInt();
 		
-		if((length<=0)||(width<=0)) {
-			System.out.println("Invalid measurements!");
-			System.exit(0);
+		while (i<n) {
+			System.out.print(n);
+			n=n+1;
+			
 		}
-		area = length*width;
-		System.out.println("The area is:"+area);
-
 	}
 }
