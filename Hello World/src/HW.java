@@ -6,15 +6,12 @@ public class HW {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		int n, i;
-		n = 0;
-		System.out.print("Enter the maximum value:");
-		i = input.nextInt();
+		int n;
 		
-		while (i>=n) {
-			System.out.print(n);
-			n=n+1;
+		do {
+			System.out.print("Enter a positive number: ");
+			n = input.nextInt();
 			
-		}
+		} while (n<1 || n>100);
 	}
 }
