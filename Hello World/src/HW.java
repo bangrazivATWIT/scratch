@@ -7,11 +7,11 @@ public class HW {
 		Scanner input = new Scanner(System.in);
 		
 		int n, i;
-		i = 0;
+		n = 0;
 		System.out.print("Enter the maximum value:");
-		n = input.nextInt();
+		i = input.nextInt();
 		
-		while (i<n) {
+		while (i>=n) {
 			System.out.print(n);
 			n=n+1;
 			
