@@ -19,7 +19,7 @@ public class HW {
 			System.exit(0);
 		}
 		
-		if (w< 0) {
+		if (w < 0) {
 			System.out.println("The length must be at least 0!");
 			System.exit(0);
 		}
