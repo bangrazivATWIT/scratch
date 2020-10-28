@@ -1,11 +1,25 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class HW {
 
 	public static void main(String[] args) {
-		int n;
-		for (n=1; n <= 1000000000; n = n*2) {
-			System.out.println(n);
-		}
+		double l, w, a;
+		
+		//Initialize input from keyboard
+		Scanner input = new Scanner(System.in);
+		
+		
+		//Print request to user and get responses
+		System.out.print("Enter the length, then the width: ");
+		l = input.nextDouble();
+		w = input.nextDouble();
+		
+		a = solveArea(l, w);
+		
+		System.out.printf("The area is %.3f%n", a);		
+	}
+	
+	public static double solveArea(double l, double w) {
+		return(l*w);
 	}
 }
