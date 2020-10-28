@@ -14,6 +14,16 @@ public class HW {
 		l = input.nextDouble();
 		w = input.nextDouble();
 		
+		if (l < 0) {
+			System.out.println("The length must be at least 0!");
+			System.exit(0);
+		}
+		
+		if (w< 0) {
+			System.out.println("The length must be at least 0!");
+			System.exit(0);
+		}
+		
 		a = solveArea(l, w);
 		
 		System.out.printf("The area is %.3f%n", a);		
